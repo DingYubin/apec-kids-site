@@ -8,11 +8,10 @@
 const ASSET_EXT = "webp";
 const asset = (...parts) => `assets/${parts.join("/")}.${ASSET_EXT}`;
 
-/* 页脚署名（插画工具名做好后填上） */
+/* 已确认的工具署名 */
 const CREDITS = {
   research: "腾讯元宝",
   code: "腾讯 CodeBuddy",
-  art: "【插画工具名待填】",
 };
 
 /* ---------- 21个经济体卡片 ---------- */
