@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小鹏友的APEC朋友圈 ｜ 一个深圳小学生的亚太观察日记</title>
+<meta name="description" content="2026年APEC来深圳啦！一个深圳南山的五年级小学生，带你看21个亚太经济体、亚太小伙伴的一天，还有家门口的南山五张卡。">
+<meta name="theme-color" content="#1f7ae0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== 顶部导航 ===== -->
+<header class="topbar" id="topbar">
+  <a class="brand" href="#home">
+    <span class="brand-bird">🐦</span>
+    <span class="brand-text">小鹏友的APEC朋友圈</span>
+  </a>
+  <nav class="nav" aria-label="页面导航">
+    <a href="#home" class="nav-link">首页</a>
+    <a href="#wall" class="nav-link">班级墙</a>
+    <a href="#moments" class="nav-link">朋友圈</a>
+    <a href="#nanshan" class="nav-link">南山五张卡</a>
+    <a href="#action" class="nav-link">我的行动</a>
+  </nav>
+  <div class="nav-meter" title="已学会的问候语">
+    ⭐ <span id="starCount">0</span><span class="muted">/21</span>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== 首页 ===== -->
+<section id="home" class="hero">
+  <div class="hero-scene" aria-hidden="true">
+    <span class="sun"></span>
+    <span class="cloud cloud-a"></span>
+    <span class="cloud cloud-b"></span>
+    <span class="skyline"></span>
+    <span class="sea"><i class="wave w1"></i><i class="wave w2"></i><i class="wave w3"></i></span>
+  </div>
+  <div class="hero-photo" id="heroPhoto" aria-hidden="true"></div>
+  <div class="bubble-field" id="bubbleField" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <p class="kicker">2026 APEC · 中国深圳</p>
+    <h1>小鹏友的<span class="h1-line">APEC朋友圈</span></h1>
+    <p class="subtitle">凯文（Kevin）× 鹏小友 ｜ 一个深圳小学生的亚太观察日记</p>
+
+    <div class="poem" id="introPoem">
+      <p>大家好，我是凯文（Kevin），</p>
+      <p>深圳南山区的一名五年级学生。</p>
+      <p>我爱体育，最爱的运动是游泳——</p>
+      <p>一头扎进水里，世界安静下来，</p>
+      <p>只听得见自己的心跳。</p>
+      <p class="p-gap">我也爱聊天，爱交朋友。</p>
+      <p>今天想邀请你，走进我的APEC朋友圈：</p>
+      <p>看看我的城市深圳，</p>
+      <p>认识21位亚太小伙伴，</p>
+      <p>一起聊聊我们的现在和未来。</p>
+    </div>
+
+    <div class="pengyou-say reveal">
+      <span class="pengyou-face" data-emoji="🐦">
+        <img src="assets/avatars/avatar-pengyou.webp" alt="鹏小友" onerror="this.remove()">
+      </span>
+      <p>嗨！我是<b>鹏小友</b>。“鹏”——来自深圳的名字“鹏城”。<br>走，我带你逛逛凯文的APEC朋友圈！</p>
+    </div>
+
+    <div class="hero-actions">
+      <a class="btn primary" href="#wall">开始探索 →</a>
+      <a class="btn ghost" href="#quiz">先考考你 →</a>
+    </div>
+  </div>
+
+  <a class="scroll-hint" href="#wall">往下翻，看看朋友们 <span>↓</span></a>
+</section>
+
+<!-- ===== 栏目① 班级墙 ===== -->
+<section id="wall" class="section sec-wall">
+  <div class="wrap">
+    <p class="section-kicker">栏目 ① 班级墙</p>
+    <h2>APEC是什么？来逛逛我们的“亚太班级墙”</h2>
+
+    <div class="lead reveal">
+      <p>我们班有几十位同学。<br>如果把亚太地区看成一个班级，那这个班里，有21位“经济体”同学——<br>有的住在大海边，有的住在雪山旁，有的爱吃面，有的爱吃米。</p>
+      <p>大家凑在一起聊什么？<br>聊怎么合作，聊怎么让生意更方便，聊怎么用好新科技，聊怎么让天更蓝、海更清。</p>
+      <p><b>2026年，这个“大班级”的聚会要开到深圳啦！</b><br>APEC这是第三次来到中国：2001年上海、2014年北京、2026年深圳。<br>作为小东道主，先带大家认识认识同学们！</p>
+    </div>
+
+    <ul class="tags">
+      <li>开放</li><li>创新</li><li>合作</li><li>互联互通</li><li>数字经济</li><li>绿色低碳</li>
+    </ul>
+
+    <div class="wall-bar reveal">
+      <p class="hint">💡 点一下卡片，翻到背面听“Ta”说句话；学会一句问候语，就点亮一颗星。</p>
+      <p class="meter">已点亮 <b><span id="starCount2">0</span>/21</b> 个问候语
+        <button type="button" class="linkbtn" id="starReset">重新数</button>
+      </p>
+    </div>
+
+    <div class="card-grid" id="cardGrid"></div>
+  </div>
+</section>
+
+<!-- ===== 栏目② 朋友圈 ===== -->
+<section id="moments" class="section sec-moments">
+  <div class="wrap narrow">
+    <p class="section-kicker">栏目 ② 朋友圈</p>
+    <h2>别看表，看朋友圈！</h2>
+    <blockquote class="quote reveal">
+      我把“我的一天”，还有亚太小伙伴们的一天，都写成了朋友圈。<br>
+      往下翻，看看在差不多的时间里，我们都在干嘛。
+    </blockquote>
+
+    <div class="feed" id="feed"></div>
+
+    <div class="mini-poem reveal">
+      <p>我们说着不同的话，</p>
+      <p>吃着不同的饭，</p>
+      <p>住在不同的地方——</p>
+      <p class="p-gap">但我们都一样：</p>
+      <p>要上学，爱运动，</p>
+      <p>想交到新的朋友。</p>
+    </div>
+    <p class="tiny-note">＊ 小葵、阿米尔、露娜是我“想象出来的朋友”，他们的样子是AI画出来的，不是真人哦。</p>
+  </div>
+</section>
+
+<!-- ===== 栏目③ 南山五张卡 ===== -->
+<section id="nanshan" class="section sec-nanshan">
+  <div class="wrap">
+    <p class="section-kicker">栏目 ③ 南山特色</p>
+    <h2>我的家门口，就是APEC之城</h2>
+    <blockquote class="quote reveal">如果有人问我深圳、南山有什么，我就带他看这五张卡。</blockquote>
+
+    <div class="ns-grid" id="nsGrid"></div>
+
+    <div class="timeline-wrap reveal">
+      <h3 class="timeline-title">深圳的脚步</h3>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目④ 我的行动 ===== -->
+<section id="action" class="section sec-action">
+  <div class="wrap">
+    <p class="section-kicker">栏目 ④ 我的行动</p>
+    <h2>认识完了，我能做点什么？</h2>
+    <blockquote class="quote reveal">
+      APEC不只是大人们的会议。深圳的小学生，也是小东道主！<br>我给自己定了三个“小行动”：
+    </blockquote>
+
+    <ol class="plans">
+      <li class="reveal"><span class="plan-num">1</span><p><b>学会21种问候语</b><br>每学会一句，就在班级墙上点亮一颗星。</p></li>
+      <li class="reveal"><span class="plan-num">2</span><p><b>把深圳和南山介绍给亚太的小伙伴</b><br>就是你现在看的这个网页呀。</p></li>
+      <li class="reveal"><span class="plan-num">3</span><p><b>留下一句话</b><br>送给我还没见过的亚太朋友。</p></li>
+    </ol>
+
+    <!-- 测验 -->
+    <div class="panel quiz-panel" id="quiz">
+      <div class="panel-head">
+        <h3>🎯 互动A · APEC知识小测验</h3>
+        <p class="panel-sub">答对答错都有小解释，答完全对会有彩蛋哦！</p>
+      </div>
+      <div id="quizBox"></div>
+    </div>
+
+    <!-- 留言墙 -->
+    <div class="panel note-panel">
+      <div class="panel-head">
+        <h3>💌 互动B · 朋友圈留言墙</h3>
+        <p class="panel-sub">如果你见到亚太的小朋友，最想对Ta说什么？写下来吧，它会贴在我们的留言墙上。</p>
+      </div>
+      <form class="note-form" id="noteForm" autocomplete="off">
+        <input type="text" id="noteName" maxlength="12" placeholder="你的名字（不写也行）">
+        <textarea id="noteText" maxlength="60" placeholder="写一句想对亚太小朋友说的话（最多60个字）" required></textarea>
+        <button class="btn primary" type="submit">贴到墙上 📌</button>
+      </form>
+      <p class="tiny-note">＊ 留言保存在你自己的浏览器里，换台设备看不到哦。</p>
+      <div class="note-wall" id="noteWall"></div>
+    </div>
+
+    <!-- 结语诗 -->
+    <div class="ending" id="ending">
+      <div class="lamps" id="lamps" aria-hidden="true"></div>
+      <div class="ending-poem" id="endingPoem">
+        <p>我是深圳的一盏小灯，</p>
+        <p>21位小伙伴，是21盏小灯。</p>
+        <p class="p-gap">灯连着灯，就是一片光；</p>
+        <p>手拉着手，就是一座桥。</p>
+        <p class="p-gap">愿科技让生活更方便，</p>
+        <p>愿和平让世界更温暖，</p>
+        <p>愿我们的未来，</p>
+        <p>像清晨的海面一样，闪闪发亮。</p>
+      </div>
+      <p class="ending-tag" id="endingTag" hidden>🪄 21盏小灯，亮啦！</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer class="footer">
+  <p class="f1">一个深圳小学生 × AI 工具一起做的网页</p>
+  <p class="f2">资料查询：<b id="creditResearch">腾讯元宝</b> ｜ 网页开发：<b id="creditCode">腾讯 CodeBuddy</b> ｜ 插画：<b id="creditArt">【插画工具名待填】</b></p>
+  <p class="f3">2026年10月 · 深圳市南山区</p>
+</footer>
+
+<!-- 鹏小友彩蛋 -->
+<button class="egg" id="eggBtn" aria-label="点我，鹏小友有话要说">
+  <span class="egg-bird">🐦</span>
+</button>
+<div class="egg-bubble" id="eggBubble" hidden></div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
