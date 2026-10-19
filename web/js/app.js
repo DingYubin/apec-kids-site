@@ -82,25 +82,39 @@
     const grid = $("#cardGrid");
     if (!grid) return;
     grid.innerHTML = ECONOMIES.map((eco) => `
-      <div class="card" role="button" tabindex="0" data-id="${eco.id}" aria-label="${eco.name}卡片，点一下翻面">
+      <article class="card" data-id="${eco.id}" aria-label="${eco.name}，APEC成员经济体">
         <div class="card-inner">
-          <div class="card-face card-front" style="--h:${eco.hue}deg">
+          <button type="button" class="card-face card-front" data-flip="open" aria-expanded="false" aria-controls="card-back-${eco.id}" aria-label="翻开${eco.name}卡片" style="--h:${eco.hue}deg">
             <span class="ph" aria-hidden="true">${eco.emoji}</span>
             ${imgTag(eco.img, eco.name + "插画")}
             <span class="card-num">${eco.id}</span>
             <span class="card-name">${eco.name}</span>
-          </div>
-          <div class="card-face card-back">
+          </button>
+          <div class="card-face card-back" id="card-back-${eco.id}" aria-hidden="true" inert>
             <p class="cb-name">${eco.id}. ${eco.name}</p>
             <p class="cb-text">${eco.text}</p>
-            <button type="button" class="cb-star" data-star="${eco.id}">☆ 学会这句问候语</button>
+            <button type="button" class="cb-star" data-star="${eco.id}" aria-pressed="false" disabled>☆ 学会这句问候语</button>
+            <button type="button" class="cb-flip" data-flip="close">翻回卡片正面</button>
           </div>
         </div>
-      </div>`).join("");
+      </article>`).join("");
   }
 
   function initWall() {
     const stars = store.get(KEY.stars, {});
+    const setFlipped = (card, flipped, moveFocus) => {
+      const front = card.querySelector(".card-front");
+      const back = card.querySelector(".card-back");
+      const star = back.querySelector(".cb-star");
+      card.classList.toggle("flipped", flipped);
+      front.setAttribute("aria-expanded", String(flipped));
+      front.setAttribute("aria-hidden", String(flipped));
+      front.inert = flipped;
+      back.setAttribute("aria-hidden", String(!flipped));
+      back.inert = !flipped;
+      star.disabled = !flipped;
+      if (moveFocus) (flipped ? star : front).focus();
+    };
     const sync = () => {
       const n = ECONOMIES.filter((e) => stars[e.id]).length;
       const a = $("#starCount"), b = $("#starCount2");
@@ -109,6 +123,7 @@
       $$("[data-star]").forEach((el) => {
         const on = !!stars[el.dataset.star];
         el.classList.toggle("on", on);
+        el.setAttribute("aria-pressed", String(on));
         el.textContent = on ? "⭐ 已经学会啦！" : "☆ 学会这句问候语";
       });
     };
@@ -123,16 +138,10 @@
         sync();
         return;
       }
-      const card = ev.target.closest(".card");
-      if (card) card.classList.toggle("flipped");
-    });
-
-    $("#cardGrid").addEventListener("keydown", (ev) => {
-      if (ev.key !== "Enter" && ev.key !== " ") return;
-      const star = ev.target.closest("[data-star]");
-      if (star) { ev.preventDefault(); star.click(); return; }
-      const card = ev.target.closest(".card");
-      if (card && ev.target === card) { ev.preventDefault(); card.classList.toggle("flipped"); }
+      const flip = ev.target.closest("[data-flip]");
+      if (!flip) return;
+      ev.stopPropagation();
+      setFlipped(flip.closest(".card"), flip.dataset.flip === "open", ev.detail === 0);
     });
 
     const reset = $("#starReset");
@@ -168,7 +177,7 @@
             ${m.images.map((im) => `<span class="media" data-emoji="${im.emoji}">${imgTag(im.src, im.alt)}</span>`).join("")}
           </div>
           <div class="post-foot">
-            <button type="button" class="like-btn${liked[m.id] ? " liked" : ""}" data-like="${m.id}">
+            <button type="button" class="like-btn${liked[m.id] ? " liked" : ""}" data-like="${m.id}" aria-pressed="${!!liked[m.id]}">
               ❤ 点赞 <b>${m.likes + (liked[m.id] ? 1 : 0)}</b>
             </button>
           </div>
@@ -189,6 +198,7 @@
       const num = btn.querySelector("b");
       if (num) num.textContent = base + (liked[id] ? 1 : 0);
       btn.classList.toggle("liked", !!liked[id]);
+      btn.setAttribute("aria-pressed", String(!!liked[id]));
       btn.classList.remove("pop");
       void btn.offsetWidth;
       btn.classList.add("pop");
@@ -233,20 +243,22 @@
       box.innerHTML = `
         <div class="quiz-top">
           <span class="quiz-count">第 ${i + 1} / ${pool.length} 题</span>
-          <span class="quiz-score">⭐ ${score} 分</span>
+          <span class="quiz-score" aria-live="polite">⭐ ${score} 分</span>
           <div class="progress"><i style="width:${pct}%"></i></div>
         </div>
         <h4 class="quiz-q">${q.q}</h4>
         <div class="quiz-options">
           ${q.options.map((o, idx) => `<button type="button" class="opt" data-idx="${idx}">${String.fromCharCode(65 + idx)}. ${o}</button>`).join("")}
         </div>
-        <div id="quizFb"></div>`;
+        <div id="quizFb" aria-live="polite" aria-atomic="true"></div>`;
 
       box.querySelectorAll(".opt").forEach((btn) => {
         btn.addEventListener("click", () => {
           const pick = Number(btn.dataset.idx);
           const ok = pick === q.answer;
           if (ok) score++;
+          const scoreEl = box.querySelector(".quiz-score");
+          if (scoreEl) scoreEl.textContent = `⭐ ${score} 分`;
           box.querySelectorAll(".opt").forEach((b) => {
             b.disabled = true;
             const idx = Number(b.dataset.idx);
@@ -412,10 +424,9 @@
 
   /* ================= 10. 页脚署名 ================= */
   function initCredits() {
-    const r = $("#creditResearch"), c = $("#creditCode"), a = $("#creditArt");
+    const r = $("#creditResearch"), c = $("#creditCode");
     if (r) r.textContent = CREDITS.research;
     if (c) c.textContent = CREDITS.code;
-    if (a) a.textContent = CREDITS.art;
   }
 
   /* ================= 启动 ================= */
