@@ -6,8 +6,26 @@
 <title>小鹏友的APEC朋友圈 ｜ 一个深圳小学生的亚太观察日记</title>
 <meta name="description" content="2026年APEC来深圳啦！一个深圳南山的五年级小学生，带你看21个亚太经济体、亚太小伙伴的一天，还有家门口的南山五张卡。">
 <meta name="theme-color" content="#1f7ae0">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="小鹏友的APEC朋友圈">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="小鹏友的APEC朋友圈">
+<meta property="og:description" content="一个深圳小学生的亚太观察日记：认识21个APEC成员经济体，看看亚太小伙伴的一天，逛逛家门口的南山五张卡。">
+<meta property="og:url" content="https://dingyubin.github.io/apec-kids-site/">
+<meta property="og:image" content="https://dingyubin.github.io/apec-kids-site/assets/share/og-cover.jpg">
+<meta property="og:image:secure_url" content="https://dingyubin.github.io/apec-kids-site/assets/share/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="小鹏友的APEC朋友圈：凯文和鹏小友站在深圳湾边">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="小鹏友的APEC朋友圈">
+<meta name="twitter:description" content="一个深圳小学生的亚太观察日记：认识21个APEC成员经济体，看看亚太小伙伴的一天。">
+<meta name="twitter:image" content="https://dingyubin.github.io/apec-kids-site/assets/share/og-cover.jpg">
+<link rel="canonical" href="https://dingyubin.github.io/apec-kids-site/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
 <link rel="stylesheet" href="css/style.css">
+<noscript><style>.reveal{opacity:1;transform:none}.dynamic-only{display:none}.poem p{opacity:1;transform:none;animation:none}.ending-poem p{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
 
@@ -28,6 +46,18 @@
     ⭐ <span id="starCount">0</span><span class="muted">/21</span>
   </div>
 </header>
+
+<noscript>
+  <p class="noscript" role="note">当前浏览器未启用 JavaScript，静态内容仍可阅读，翻卡、测验和留言等互动功能暂不可用。</p>
+</noscript>
+
+<div class="app-fallback" id="appFallback" role="status" aria-live="polite" hidden>
+  <div>
+    <b>这个页面有一段小旅程没有启动成功。</b>
+    <span>你仍然可以阅读页面内容，或重新加载再试一次。</span>
+  </div>
+  <button type="button" class="btn primary" id="appReload">重新加载</button>
+</div>
 
 <main>
 
@@ -96,11 +126,11 @@
     <div class="wall-bar reveal">
       <p class="hint">💡 点一下卡片，翻到背面听“Ta”说句话；学会一句问候语，就点亮一颗星。</p>
       <p class="meter">已点亮 <b><span id="starCount2">0</span>/21</b> 个问候语
-        <button type="button" class="linkbtn" id="starReset">重新数</button>
+        <button type="button" class="linkbtn" id="starReset">清空星标</button>
       </p>
     </div>
 
-    <div class="card-grid" id="cardGrid"></div>
+    <div class="card-grid dynamic-only" id="cardGrid"></div>
   </div>
 </section>
 
@@ -114,7 +144,7 @@
       往下翻，看看在差不多的时间里，我们都在干嘛。
     </blockquote>
 
-    <div class="feed" id="feed"></div>
+    <div class="feed dynamic-only" id="feed"></div>
 
     <div class="mini-poem reveal">
       <p>我们说着不同的话，</p>
@@ -135,11 +165,11 @@
     <h2>我的家门口，就是APEC之城</h2>
     <blockquote class="quote reveal">如果有人问我深圳、南山有什么，我就带他看这五张卡。</blockquote>
 
-    <div class="ns-grid" id="nsGrid"></div>
+    <div class="ns-grid dynamic-only" id="nsGrid"></div>
 
     <div class="timeline-wrap reveal">
       <h3 class="timeline-title">深圳的脚步</h3>
-      <ol class="timeline" id="timeline"></ol>
+      <ol class="timeline dynamic-only" id="timeline"></ol>
     </div>
   </div>
 </section>
@@ -165,7 +195,7 @@
         <h3>🎯 互动A · APEC知识小测验</h3>
         <p class="panel-sub">答对答错都有小解释，答完全对会有彩蛋哦！</p>
       </div>
-      <div id="quizBox"></div>
+      <div id="quizBox" class="dynamic-only"></div>
     </div>
 
     <!-- 留言墙 -->
@@ -180,12 +210,12 @@
         <button class="btn primary" type="submit">贴到墙上 📌</button>
       </form>
       <p class="tiny-note">＊ 留言保存在你自己的浏览器里，换台设备看不到哦。</p>
-      <div class="note-wall" id="noteWall"></div>
+      <div class="note-wall dynamic-only" id="noteWall"></div>
     </div>
 
     <!-- 结语诗 -->
     <div class="ending" id="ending">
-      <div class="lamps" id="lamps" aria-hidden="true"></div>
+      <div class="lamps dynamic-only" id="lamps" aria-hidden="true"></div>
       <div class="ending-poem" id="endingPoem">
         <p>我是深圳的一盏小灯，</p>
         <p>21位小伙伴，是21盏小灯。</p>
@@ -206,8 +236,22 @@
 <!-- ===== 页脚 ===== -->
 <footer class="footer">
   <p class="f1">一个深圳小学生 × AI 工具一起做的网页</p>
-  <p class="f2">资料查询：<b id="creditResearch">腾讯元宝</b> ｜ 网页开发：<b id="creditCode">腾讯 CodeBuddy</b></p>
+  <p class="f2">资料查询：<b id="creditResearch">腾讯元宝</b> ｜ 网页开发：<b id="creditCode">腾讯 CodeBuddy</b> ｜ 插画：<b>Muse AI</b></p>
   <p class="f3">2026年10月 · 深圳市南山区</p>
+
+  <details class="sources">
+    <summary>资料来源与核对说明</summary>
+    <p class="sources-date">资料来源核对日期：2026年10月20日。以下链接均已在当日检查可访问。</p>
+    <ul>
+      <li><a href="https://www.apec.org/who-we-are/our-members" target="_blank" rel="noopener noreferrer">APEC：成员经济体</a><span>核对21个成员经济体及成员表述。</span></li>
+      <li><a href="https://www.apec.org/who-we-are/history" target="_blank" rel="noopener noreferrer">APEC：历史</a><span>核对APEC合作背景与历次主办城市信息。</span></li>
+      <li><a href="https://www.apec2026.cn/" target="_blank" rel="noopener noreferrer">APEC China 2026 官方网站</a><span>核对2026年APEC相关活动及主办城市。</span></li>
+      <li><a href="https://www.apec2026.cn/node_204.html" target="_blank" rel="noopener noreferrer">APEC China 2026：深圳介绍</a><span>核对深圳城市介绍与开放、创新相关内容。</span></li>
+      <li><a href="https://cgj.sz.gov.cn/xsmh/gysz/gydt/content/post_11719137.html" target="_blank" rel="noopener noreferrer">深圳市城市管理和综合执法局：簕杜鹃市花文化</a><span>核对簕杜鹃作为深圳市花的表述。</span></li>
+      <li><a href="https://zjj.sz.gov.cn/xxgk/video/content/post_11348900.html" target="_blank" rel="noopener noreferrer">深圳市住房和建设局：深圳80年代建筑记忆</a><span>核对“三天一层楼”与“深圳速度”的时代背景。</span></li>
+    </ul>
+    <p class="sources-note">文中“小葵、阿米尔、露娜”为虚构的想象伙伴，相关插画由 AI 生成，不是真人照片。部分内容为便于儿童理解而采用比喻和简化表达。</p>
+  </details>
 </footer>
 
 <!-- 鹏小友彩蛋 -->
@@ -216,6 +260,34 @@
 </button>
 <div class="egg-bubble" id="eggBubble" hidden></div>
 
+<script>
+(function () {
+  window.__APEC_BOOT_STATE__ = { scriptError: false };
+  function showFallback() {
+    var notice = document.getElementById("appFallback");
+    if (notice) notice.hidden = false;
+  }
+  window.__apecShowFallback = showFallback;
+  window.__apecBootTimer = window.setTimeout(showFallback, 4000);
+  window.addEventListener("error", function (event) {
+    if (event && event.target && event.target.tagName === "SCRIPT") {
+      window.__APEC_BOOT_STATE__.scriptError = true;
+      showFallback();
+      return;
+    }
+    /* 运行时脚本错误也可能发生在 app.js 顶层；仍保留可读内容并给出提示。 */
+    if (!event.target || event.target === window) {
+      window.__APEC_BOOT_STATE__.runtimeError = true;
+      showFallback();
+    }
+  }, true);
+  window.addEventListener("unhandledrejection", function () {
+    window.__APEC_BOOT_STATE__.runtimeError = true;
+    showFallback();
+  });
+})();
+</script>
+<script src="js/assets-manifest.js"></script>
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
 </body>
