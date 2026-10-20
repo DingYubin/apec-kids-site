@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "styleSuffix": "儿童绘本插画风格，圆润可爱的造型，柔和的手绘笔触，明亮温暖的配色（海蓝、珊瑚橙、明黄、薄荷绿），干净简洁的构图，柔和自然光，高质量，画面里不要出现任何文字、字母、数字、logo、水印、签名、旗帜、地图和国界线。",
+  "negativePrompt": "文字，字母，单词，数字，水印，logo，签名，旗帜，国徽，地图，国界，真人照片，写实人像，恐怖，暴力，畸形，多余的手指，多余的肢体，模糊，低画质，杂乱，阴暗色调",
+  "images": [
+    {
+      "id": "home-bg",
+      "category": "home",
+      "output": "assets/home-bg.webp",
+      "size": "2048x1152",
+      "prompt": "晴朗的清晨，深圳湾海面波光闪闪，远处是深圳城市天际线剪影（有春笋造型的高楼和摩天大楼群），近处是沿着海岸弯曲的骑行道、绿树和粉紫色的花丛；天空中有21个彩色的小气泡轻轻飘着；画面右下角站着一个背书包的男孩和一只圆滚滚的蓝色小鸟，正一起看向远处的大海（凯文：11岁的亚洲男孩，黑色短发微微翘起，圆脸，笑起来眼睛弯弯的，穿亮黄色圆领T恤、深蓝色运动短裤、白色运动鞋，背蓝色双肩书包）（鹏小友：一只圆滚滚的蓝色卡通小鹏鸟，白色圆肚皮，短短的翅膀，圆圆的大眼睛，头顶一撮翘起来的呆毛，胸口有一颗小黄星，表情开心友善）。画面上方留出大块干净的蓝天，方便叠加网页标题。",
+      "targetSize": "1920x1080"
+    },
+    {
+      "id": "avatar-kevin",
+      "category": "avatars",
+      "output": "assets/avatars/avatar-kevin.webp",
+      "size": "1024x1024",
+      "prompt": "男孩头像特写，正面半身，微笑看着镜头，背景是柔和的浅蓝色渐变，人物居中，四周留白（凯文：11岁的亚洲男孩，黑色短发微微翘起，圆脸，笑起来眼睛弯弯的，穿亮黄色圆领T恤、深蓝色运动短裤、白色运动鞋，背蓝色双肩书包）。"
+    },
+    {
+      "id": "avatar-pengyou",
+      "category": "avatars",
+      "output": "assets/avatars/avatar-pengyou.webp",
+      "size": "1024x1024",
+      "prompt": "卡通小鸟头像特写：正面，圆滚滚的小鸟站在画面中央，张开一只小翅膀像在打招呼，眼睛亮亮的，背景是柔和的浅黄色渐变，四周留白（鹏小友：一只圆滚滚的蓝色卡通小鹏鸟，白色圆肚皮，短短的翅膀，圆圆的大眼睛，头顶一撮翘起来的呆毛，胸口有一颗小黄星，表情开心友善）。"
+    },
+    {
+      "id": "avatar-xiaokui",
+      "category": "avatars",
+      "output": "assets/avatars/avatar-xiaokui.webp",
+      "size": "1024x1024",
+      "prompt": "女孩头像特写，正面半身，甜甜地微笑，背景是柔和的浅粉色渐变，人物居中，四周留白（小葵：11岁的日本女孩，黑色齐耳短发配齐刘海，红色小蝴蝶结发夹，穿浅粉色上衣）。"
+    },
+    {
+      "id": "avatar-amir",
+      "category": "avatars",
+      "output": "assets/avatars/avatar-amir.webp",
+      "size": "1024x1024",
+      "prompt": "男孩头像特写，正面半身，开心地笑着，背景是柔和的薄荷绿渐变，人物居中，四周留白（阿米尔：11岁的男孩，微卷黑色短发，深棕色皮肤，笑起来露出白牙，穿薄荷绿色短袖T恤）。"
+    },
+    {
+      "id": "avatar-luna",
+      "category": "avatars",
+      "output": "assets/avatars/avatar-luna.webp",
+      "size": "1024x1024",
+      "prompt": "女孩头像特写，正面半身，温柔地微笑，背景是柔和的浅橙色渐变，人物居中，四周留白（露娜：11岁的女孩，黑色长发扎一条麻花辫，小麦色皮肤，穿红色针织毛衣）。"
+    },
+    {
+      "id": "moment-kevin-1",
+      "category": "moments",
+      "output": "assets/moments/moment-kevin-1.webp",
+      "size": "1600x1200",
+      "prompt": "清晨的餐桌：一碗热腾腾的清汤细面，卧着一个荷包蛋和几根青菜，冒着热气，木质餐桌上摆着筷子和一个小碟子；凯文坐在桌边笑眯眯地拿起筷子，晨光从窗户照进来（凯文：11岁的亚洲男孩，黑色短发微微翘起，圆脸，笑起来眼睛弯弯的，穿亮黄色圆领T恤、深蓝色运动短裤、白色运动鞋，背蓝色双肩书包）。"
+    },
+    {
+      "id": "moment-kevin-2",
+      "category": "moments",
+      "output": "assets/moments/moment-kevin-2.webp",
+      "size": "1600x1200",
+      "prompt": "上学路上：凯文背着蓝色双肩书包走在人行道上，路边开满粉紫色的簕杜鹃花（三角梅），几片花瓣落在书包上，清晨的阳光从树叶间洒下来，远处是城市街道和红绿灯（凯文：11岁的亚洲男孩，黑色短发微微翘起，圆脸，笑起来眼睛弯弯的，穿亮黄色圆领T恤、深蓝色运动短裤、白色运动鞋，背蓝色双肩书包）。"
+    },
+    {
+      "id": "moment-kevin-3",
+      "category": "moments",
+      "output": "assets/moments/moment-kevin-3.webp",
+      "size": "1600x1200",
+      "prompt": "放学后的学校操场：凯文穿着运动服在红色跑道上跑步，夕阳把影子拉得长长的，远处的同学在跳绳，天空是橙粉色的晚霞（凯文：11岁的亚洲男孩，黑色短发微微翘起，圆脸，笑起来眼睛弯弯的，穿亮黄色圆领T恤、深蓝色运动短裤、白色运动鞋，背蓝色双肩书包）。"
+    },
+    {
+      "id": "moment-xiaokui",
+      "category": "moments",
+      "output": "assets/moments/moment-xiaokui.webp",
+      "size": "1600x1200",
+      "prompt": "小学教室里：小葵戴着白色帽子和白围裙，和同学一起给全班分咖喱饭，托盘里是一份份咖喱饭和牛奶盒，阳光照进教室窗户，同学们笑着排队（小葵：11岁的日本女孩，黑色齐耳短发配齐刘海，红色小蝴蝶结发夹，穿浅粉色上衣）。"
+    },
+    {
+      "id": "moment-amir",
+      "category": "moments",
+      "output": "assets/moments/moment-amir.webp",
+      "size": "1600x1200",
+      "prompt": "热闹的夜市：摊位上方挂着一串串彩色小灯，拉茶师傅把奶茶拉成一条长长的弧线，杯子里冒着小泡泡；阿米尔举着一杯拉茶开心地笑，身后是各种小吃摊（阿米尔：11岁的男孩，微卷黑色短发，深棕色皮肤，笑起来露出白牙，穿薄荷绿色短袖T恤）。"
+    },
+    {
+      "id": "moment-luna",
+      "category": "moments",
+      "output": "assets/moments/moment-luna.webp",
+      "size": "1600x1200",
+      "prompt": "秘鲁高原的午后：露娜蹲下来轻轻摸一只毛茸茸的白色羊驼，羊驼眯着眼睛很享受，远处是安第斯山脉、蓝天和朵朵白云（露娜：11岁的女孩，黑色长发扎一条麻花辫，小麦色皮肤，穿红色针织毛衣）。"
+    },
+    {
+      "id": "card-01-china",
+      "category": "cards",
+      "output": "assets/cards/card-01-china.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：一只毛茸茸的大熊猫坐在草地上啃竹子，旁边放着一碗冒着热气的饺子，背景是连绵起伏的长城和青翠山峦。"
+    },
+    {
+      "id": "card-02-hongkong",
+      "category": "cards",
+      "output": "assets/cards/card-02-hongkong.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：一艘绿色船身、白色船舱的经典小渡轮在维多利亚港航行，背景是密集的城市高楼天际线，画面一角摆着一个金黄酥脆的蛋挞。"
+    },
+    {
+      "id": "card-03-taipei",
+      "category": "cards",
+      "output": "assets/cards/card-03-taipei.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：一杯大大的珍珠奶茶立在画面中央，珍珠圆滚滚，杯壁挂着冰水珠，背景是挂着暖黄色灯笼的夜市街道。"
+    },
+    {
+      "id": "card-04-japan",
+      "category": "cards",
+      "output": "assets/cards/card-04-japan.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：清晨的富士山山顶覆着白雪，山脚下一只可爱的小鹿正轻轻鞠躬，粉色樱花花瓣在空中飘落。"
+    },
+    {
+      "id": "card-05-korea",
+      "category": "cards",
+      "output": "assets/cards/card-05-korea.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：一座韩式传统宫殿的青瓦飞檐（红柱白墙），屋檐下的小桌上摆着一碗石锅拌饭和一碟红红的泡菜，旁边落着金黄银杏叶。"
+    },
+    {
+      "id": "card-06-australia",
+      "category": "cards",
+      "output": "assets/cards/card-06-australia.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：金色阳光下，一只袋鼠在草地上跳跃，旁边的桉树上，一只胖乎乎的考拉抱着树枝睡大觉。"
+    },
+    {
+      "id": "card-07-newzealand",
+      "category": "cards",
+      "output": "assets/cards/card-07-newzealand.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：南半球的璀璨星空，银河横跨夜空，草地上站着一只圆滚滚的几维鸟，旁边草地上放着两颗切开的奇异果。"
+    },
+    {
+      "id": "card-08-indonesia",
+      "category": "cards",
+      "output": "assets/cards/card-08-indonesia.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：碧蓝的群岛海面，沙滩上趴着一只圆润可爱的卡通科莫多巨蜥（大眼睛、不吓人），远处是绿色火山岛和几条小船。"
+    },
+    {
+      "id": "card-09-malaysia",
+      "category": "cards",
+      "output": "assets/cards/card-09-malaysia.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：夜市的小桌上摆着一份香蕉叶上的椰浆饭，旁边一杯拉茶冒着泡泡，背景是挂满彩灯和红灯笼的夜市摊位。"
+    },
+    {
+      "id": "card-10-philippines",
+      "category": "cards",
+      "output": "assets/cards/card-10-philippines.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：热带海岛：白色沙滩和椰子树，树枝上蹲着一只大眼睛、圆脑袋的可爱眼镜猴，蓝天白云。"
+    },
+    {
+      "id": "card-11-singapore",
+      "category": "cards",
+      "output": "assets/cards/card-11-singapore.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：白色的鱼尾狮雕像喷出一道弧形水柱，背景是发着微光、像一棵棵超级大树一样的花园景观，天空是傍晚的蓝紫色。"
+    },
+    {
+      "id": "card-12-thailand",
+      "category": "cards",
+      "output": "assets/cards/card-12-thailand.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：一只温柔的大象在河边慢慢散步，旁边小桌上摆着一份芒果糯米饭（金黄色芒果和白色糯米），背景是金光闪闪的泰式屋顶。"
+    },
+    {
+      "id": "card-13-vietnam",
+      "category": "cards",
+      "output": "assets/cards/card-13-vietnam.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：一碗热气腾腾的牛肉河粉（配青柠和香草），背景是下龙湾：碧绿海面上升起一座座圆润的石灰岩山峰，一条小木船漂过。"
+    },
+    {
+      "id": "card-14-brunei",
+      "category": "cards",
+      "output": "assets/cards/card-14-brunei.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：清澈水面上的水上村庄：一排排色彩明快的高脚木屋，木栈道互相连接，一艘小船载着小朋友经过，桌上摆着几串烤沙爹串。"
+    },
+    {
+      "id": "card-15-png",
+      "category": "cards",
+      "output": "assets/cards/card-15-png.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：热带雨林里，两只羽毛像彩虹一样的极乐鸟（天堂鸟）展开翅膀跳舞，四周是巨大的绿叶和几朵热带兰花。"
+    },
+    {
+      "id": "card-16-mexico",
+      "category": "cards",
+      "output": "assets/cards/card-16-mexico.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：金色阳光下，一座阶梯状的古代金字塔立在原野上，周围点缀着仙人掌，小桌上摆着一份香喷喷的塔可（玉米卷饼），上方挂着彩色剪纸小旗。"
+    },
+    {
+      "id": "card-17-peru",
+      "category": "cards",
+      "output": "assets/cards/card-17-peru.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：云雾缭绕的山谷里，古老的石头城（层层梯田和石屋），前景草地上站着一只毛茸茸的白色羊驼，远处是安第斯山峰。"
+    },
+    {
+      "id": "card-18-chile",
+      "category": "cards",
+      "output": "assets/cards/card-18-chile.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：蓝天大海边，一座面向海面的巨大石像侧脸（圆润可爱化的复活节岛石像），旁边篮子里装满红彤彤的车厘子。"
+    },
+    {
+      "id": "card-19-russia",
+      "category": "cards",
+      "output": "assets/cards/card-19-russia.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：冬天的木屋前，雪地上站着一排从大到小的彩色套娃，小桌上摆着一盘金黄色布林饼配红果酱，雪花轻轻飘落。"
+    },
+    {
+      "id": "card-20-canada",
+      "category": "cards",
+      "output": "assets/cards/card-20-canada.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：秋天的枫树林，红橙金黄三色树叶，河边一只圆滚滚的河狸在堆树枝小水坝，小桌上松饼正淋下金黄的枫糖浆。"
+    },
+    {
+      "id": "card-21-usa",
+      "category": "cards",
+      "output": "assets/cards/card-21-usa.webp",
+      "size": "1200x1600",
+      "prompt": "竖版构图，主体在画面中间偏下，上方留出干净的天空或背景，四周留柔和的空白边距：一座雄伟的红色悬索桥横跨蓝绿色的海峡，桥下有白色帆船经过，水面雾气缭绕，天空是金色的夕阳。"
+    },
+    {
+      "id": "nanshan-1-shenzhenbay",
+      "category": "nanshan",
+      "output": "assets/nanshan/nanshan-1-shenzhenbay.webp",
+      "size": "2048x1152",
+      "prompt": "清晨的深圳湾海滨：弯曲的滨海骑行道上，凯文骑着自行车向前，海面波光粼粼，对岸是朦胧的城市天际线剪影，海岸边是一排绿树和粉色簕杜鹃花，远处立着一座抽象造型的金属雕塑（凯文：11岁的亚洲男孩，黑色短发微微翘起，圆脸，笑起来眼睛弯弯的，穿亮黄色圆领T恤、深蓝色运动短裤、白色运动鞋，背蓝色双肩书包）。",
+      "targetSize": "1920x1080"
+    },
+    {
+      "id": "nanshan-2-nantou",
+      "category": "nanshan",
+      "output": "assets/nanshan/nanshan-2-nantou.webp",
+      "size": "2048x1152",
+      "prompt": "傍晚的老街区：一座中式牌坊（牌匾上没有文字）连着灰瓦屋顶的老房子，石板路湿漉漉地反着暖黄色的灯光，屋檐下挂着一串红灯笼，凯文手里拿着一杯糖水走在石板路上，墙边有青苔和绿植（凯文：11岁的亚洲男孩，黑色短发微微翘起，圆脸，笑起来眼睛弯弯的，穿亮黄色圆领T恤、深蓝色运动短裤、白色运动鞋，背蓝色双肩书包）。",
+      "targetSize": "1920x1080"
+    },
+    {
+      "id": "nanshan-3-sciencepark",
+      "category": "nanshan",
+      "output": "assets/nanshan/nanshan-3-sciencepark.webp",
+      "size": "2048x1152",
+      "prompt": "傍晚的现代科技园区：一栋栋玻璃幕墙高楼亮起温暖灯光，天空是蓝紫色渐变，一架小小的四旋翼无人机悬停在半空，凯文仰着头开心地挥手，地面有绿树、草坪和一道小喷泉，科技感但不冰冷（凯文：11岁的亚洲男孩，黑色短发微微翘起，圆脸，笑起来眼睛弯弯的，穿亮黄色圆领T恤、深蓝色运动短裤、白色运动鞋，背蓝色双肩书包）。",
+      "targetSize": "1920x1080"
+    },
+    {
+      "id": "nanshan-4-shekou",
+      "category": "nanshan",
+      "output": "assets/nanshan/nanshan-4-shekou.webp",
+      "size": "2048x1152",
+      "prompt": "海边的傍晚广场：一艘巨大的白色游轮造型建筑停在水边（船身没有文字），周围是现代艺术感十足的白色建筑和亲水平台，海风中飘着几只风筝，凯文站在栏杆边看海，天空是橘粉色晚霞（凯文：11岁的亚洲男孩，黑色短发微微翘起，圆脸，笑起来眼睛弯弯的，穿亮黄色圆领T恤、深蓝色运动短裤、白色运动鞋，背蓝色双肩书包）。",
+      "targetSize": "1920x1080"
+    },
+    {
+      "id": "nanshan-5-qianhai",
+      "category": "nanshan",
+      "output": "assets/nanshan/nanshan-5-qianhai.webp",
+      "size": "2048x1152",
+      "prompt": "开阔的海湾新城：崭新的高楼群拔地而起，玻璃外墙倒映着天空和白云，海边绿道上有一条长椅，凯文和鹏小友并排坐着看海，远处还有正在建设的高楼和塔吊剪影，天空明亮开阔（凯文：11岁的亚洲男孩，黑色短发微微翘起，圆脸，笑起来眼睛弯弯的，穿亮黄色圆领T恤、深蓝色运动短裤、白色运动鞋，背蓝色双肩书包）（鹏小友：一只圆滚滚的蓝色卡通小鹏鸟，白色圆肚皮，短短的翅膀，圆圆的大眼睛，头顶一撮翘起来的呆毛，胸口有一颗小黄星，表情开心友善）。",
+      "targetSize": "1920x1080"
+    }
+  ]
+}

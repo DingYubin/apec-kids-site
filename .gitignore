@@ -10,6 +10,9 @@ build/
 .env
 .env.local
 
+# Muse 生成缓存（可能含临时原图与任务日志）
+.cache/
+
 # IDE
 .idea/
 .vscode/

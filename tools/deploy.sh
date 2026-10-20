@@ -5,8 +5,8 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-if ! git diff --quiet -- web || ! git diff --cached --quiet -- web; then
-  echo "⚠️  web/ 有未提交改动：先 git add + git commit，再跑本脚本" >&2
+if [ -n "$(git status --porcelain -- web)" ]; then
+  echo "⚠️  web/ 有未提交或未跟踪的改动：先 git add + git commit，再跑本脚本" >&2
   exit 1
 fi
 
